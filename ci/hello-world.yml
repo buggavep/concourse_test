@@ -11,7 +11,7 @@ jobs:
     file: resource-tutorial/ci/task/task_hello_world.yml
 
 resources:
-- name: concourse_test
+- name: resource-tutorial
   type: git
   source:
     uri: https://github.com/buggavep/concourse_test.git
