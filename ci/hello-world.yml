@@ -8,13 +8,13 @@ jobs:
   - get: my-timer
     trigger: true
   - task: hello-world
-    file: resource-tutorial/01_task_hello_world/task_hello_world.yml
+    file: resource-tutorial/task/task_hello_world.yml
 
 resources:
 - name: resource-tutorial
   type: git
   source:
-    uri: https://github.com/starkandwayne/concourse-tutorial.git
+    uri: https://github.com/buggavep/concourse_test.git
 
 - name: my-timer
   type: time
