@@ -5,7 +5,7 @@ jobs:
   serial: true
   plan:
   - get: concourse_test
-  - get: my-timer
+#  - get: my-timer
     trigger: true
   - task: hello-world
     file: concourse_test/ci/task/task_hello_world.yml
@@ -16,7 +16,7 @@ resources:
   source:
     uri: https://github.com/buggavep/concourse_test.git
 
-- name: my-timer
-  type: time
-  source:
-    interval: 2m
+#- name: my-timer
+#  type: time
+#  source:
+#    interval: 2m
