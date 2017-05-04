@@ -4,11 +4,11 @@ jobs:
   public: true
   serial: true
   plan:
-  - get: concourse_test
+  - get: resource-tutorial
 #  - get: my-timer
     trigger: true
   - task: hello-world
-    file: concourse_test/ci/task/task_hello_world.yml
+    file: resource-tutorial/ci/task/task_hello_world.yml
 
 resources:
 - name: concourse_test
