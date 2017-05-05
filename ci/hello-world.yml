@@ -5,10 +5,10 @@ jobs:
   serial: true
   plan:
   - get: resource-tutorial
-#  - get: my-timer
+# - get: my-timer
     trigger: true
   - task: hello-world
-    file: resource-tutorial/task/task_hello_world.yml
+    file: resource-tutorial/ci/task/task_hello_world.yml
 
 resources:
 - name: resource-tutorial
